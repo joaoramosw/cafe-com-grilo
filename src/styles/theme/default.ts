@@ -18,6 +18,7 @@ export const defaultTheme = {
       "brand-yellow": "#DBAC2C",
       "brand-yellow-light": "#F1E9C9",
     },
+
     textSizes: {
       "title-title-xl": "3rem",
       "title-title-l": "2rem",
@@ -34,6 +35,7 @@ export const defaultTheme = {
       "components-button-g": "0.875rem",
       "components-button-s": "0.75rem",
     },
+    
     fonts: {
       regular: "'Roboto'",
       title: "'Baloo 2'",

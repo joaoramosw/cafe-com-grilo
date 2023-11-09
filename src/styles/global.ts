@@ -9,7 +9,22 @@ export const GlobalStyle= createGlobalStyle`
 }
 
 body{
-    
+    background: ${({theme})=>theme.colors["base-background"]};
+    color: ${({theme})=>theme.colors["base-text"]};
+    -webkit-font-smoothing:antialiased;
 }
 
+body,input,textarea,button{
+    font-family: ${({theme})=>theme.fonts.regular};
+    font-weight: 400;
+    font-size:${({theme})=>theme.textSizes["text-regular-m"]}
+}
+
+button{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
 `
