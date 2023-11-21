@@ -50,7 +50,7 @@ export const HeaderButton = styled.button<HeaderButtonProps>`
     background: ${({ theme }) => theme.colors[`brand-${variant}-light`]};
     color: ${({ theme }) => theme.colors[`brand-${variant}-dark`]};
 
-
+   
   `}
 
   ${({ variant }) =>
