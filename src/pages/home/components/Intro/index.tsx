@@ -1,12 +1,16 @@
 import {IntroContainer, IntroContent,} from "./styles";
-
+import introImg from "../../../../assets/Imagem.png"
 
 export function Intro(){
 
     return(
         <IntroContainer>
             <IntroContent className="container" >
-                <img src="../../../../assets/Background.png" alt="" />         
+                <div>
+
+                </div>
+
+                <img src={introImg} />
             </IntroContent>
         </IntroContainer>
     )
