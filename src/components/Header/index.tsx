@@ -13,7 +13,10 @@ import { NavLink } from "react-router-dom";
       <HeaderContainer>
         <div className="container">
 
-            <img src={coffeeLogoImg} alt="" />
+        <NavLink to="/">
+          <img src={coffeeLogoImg} alt="" />
+        </NavLink>
+            
   
           <HeaderButtonsContainer>
             <HeaderButton variant="purple">
