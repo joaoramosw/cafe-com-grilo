@@ -1,6 +1,10 @@
-import { styled } from "styled-components";
+import { css, styled } from "styled-components";
 
-export const QuantifyInputContainer = styled.div`
+interface QuantifyInputContainerProps{
+  size?: "medium" | "small";
+}
+
+export const QuantifyInputContainer = styled.div<QuantifyInputContainerProps>`
   flex: 1;
   background: ${({theme})=>theme.colors["base-button"]};
   gap: 4px;
@@ -22,6 +26,17 @@ export const QuantifyInputContainer = styled.div`
     }
   }
 
+  ${({size})=> 
+  size=== 'medium' && 
+  css`
+    padding: 0.5rem;
+  `}
+
+  ${({size})=> 
+  size=== 'small' && 
+  css`
+    padding: 0.3rem 0.5rem;
+  `}
 
 `;
 
