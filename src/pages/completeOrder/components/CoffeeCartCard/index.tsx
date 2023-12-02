@@ -11,6 +11,7 @@ export function CoffeeCartCard(){
                 <div>
                     <RegularText color="subtitle">Cremoso</RegularText>
                     <ActionsContainer>
+                        {/* Not working  */}
                         <QuantifyInput size="small"/>
                         <RemoveButton>
                             <Trash size={16}/>
