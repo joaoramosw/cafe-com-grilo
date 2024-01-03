@@ -14,7 +14,7 @@ export function OrderComfirmedPage() {
         </div>
         <section>
             {/* //TODO: colocar imagem do café */}
-            <img src={}/>
+            {/* <img src={}/> */}
         </section>
     </OrderComfirmedContainer>
   );
