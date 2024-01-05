@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-export const OrderComfirmedContainer = styled.div`
+export const OrderConfirmedContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2.5rem;

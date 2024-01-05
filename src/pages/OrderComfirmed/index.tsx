@@ -1,4 +1,4 @@
-import { OrderComfirmedContainer, OrderDetailsContainer } from "./styled";
+import { OrderConfirmedContainer, OrderDetailsContainer } from "./styled";
 import { RegularText, TitleText } from './../../components/Typography';
 import confirmedOrderIllustration from "./../../assets/illustration.svg";
 import { InfoWithIcon } from './../../components/InfoWithIcon/index'; 
@@ -8,7 +8,7 @@ import { useTheme } from "styled-components";
 export function OrderComfirmedPage() {
   const { colors } = useTheme();
   return (
-    <OrderComfirmedContainer className="container">
+    <OrderConfirmedContainer className="container">
         <div>
             <TitleText size="l">Uhuu! Pedido confirmado</TitleText>
 
@@ -58,6 +58,6 @@ export function OrderComfirmedPage() {
           </OrderDetailsContainer>
             <img src={confirmedOrderIllustration}/> 
         </section>
-    </OrderComfirmedContainer>
+    </OrderConfirmedContainer>
   );
 }
