@@ -11,7 +11,6 @@ interface CartContextType{
 }
 
 interface CartContextProviderProps{
-    children: ReactNode 
 }
 
 export const CartContext = createContext({} as CartContextType)
