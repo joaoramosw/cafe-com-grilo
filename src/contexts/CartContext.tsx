@@ -10,8 +10,6 @@ interface CartContextType{
     CartItems: CartItem[];
 }
 
-interface CartContextProviderProps{
-}
 
 export const CartContext = createContext({} as CartContextType)
 
