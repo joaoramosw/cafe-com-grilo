@@ -10,7 +10,6 @@ export function Button({text , ...props}: ButtonProps){
             {text}
         </ButtonContainer><ButtonContainer {...props}>
             {text}
-            {text}
         </ButtonContainer>
     )
 }
