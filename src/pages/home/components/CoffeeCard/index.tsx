@@ -25,7 +25,7 @@ export function CoffeeCard({coffee}:CoffeeProps){
         <CoffeeCardContainer>
 
             <img src={`/coffees/${coffee.photo}`} alt="" />
-            <img src={`/coffees/${coffee.photo}`} alt="" />
+            
 
             <Tags>
 
