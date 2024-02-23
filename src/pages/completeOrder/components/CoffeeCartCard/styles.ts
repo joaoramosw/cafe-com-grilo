@@ -37,7 +37,7 @@ export const ActionsContainer = styled.div`
   height: 2rem;
   margin-top: 0.5rem;
 
-  >div{
+  >div {
     max-width: 4.5rem;
     height: 100%;
 

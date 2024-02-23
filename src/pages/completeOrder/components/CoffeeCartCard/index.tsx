@@ -10,9 +10,10 @@ export function CoffeeCartCard(){
                 <img src="../../../../../public/coffees/cremoso.png" alt="" />
                 <div>
                     <RegularText color="subtitle">Cremoso</RegularText>
+
                     <ActionsContainer>
-                        {/* Not working  */}
-                        <QuantifyInput size="small"/>
+                    <QuantifyInput />
+
                         <RemoveButton>
                             <Trash size={16}/>
                             Remover 
