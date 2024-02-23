@@ -6,10 +6,13 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
 
 export function Button({text , ...props}: ButtonProps){
     return(
-        <ButtonContainer {...props}>
-            {text}
-        </ButtonContainer><ButtonContainer {...props}>
-            {text}
-        </ButtonContainer>
+        <>
+            <ButtonContainer {...props}>
+                {text}
+            </ButtonContainer>
+            <ButtonContainer {...props}>
+                {text}
+            </ButtonContainer>
+        </>
     )
 }
