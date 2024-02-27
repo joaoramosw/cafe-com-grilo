@@ -19,6 +19,11 @@ export const CartContext = createContext({} as CartContextType)
 export function CartContextProvider({children}:CartContextProviderProps){
     const [cartItems, setCartItems] = useState<CartItem[]>([]);
 
+    function addCoffeeToCart(coffee: CartItem){
+        const coffeAlreadyExistsInCart = cartItems.findIndex(cartItems => cartItems.id === coffee.id);
+        setCartItems([...cartItems, coffee]);
+    }
+ 
     return(
         <CartContext.Provider value={{cartItems}}>
             {children}	
