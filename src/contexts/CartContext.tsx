@@ -21,7 +21,6 @@ export function CartContextProvider({children}:CartContextProviderProps){
 
     function addCoffeeToCart(coffee: CartItem){
         const coffeAlreadyExistsInCart = cartItems.findIndex(cartItems => cartItems.id === coffee.id);
-        setCartItems([...cartItems, coffee]);
     }
  
     return(
