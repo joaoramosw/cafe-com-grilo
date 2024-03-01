@@ -17,11 +17,11 @@ interface CartContextProviderProps{
 export const CartContext = createContext({} as CartContextType)
 
 export function CartContextProvider({children}:CartContextProviderProps){
-    const [cartItems, setCartItems] = useState<CartItem[]>([]);
+    // const [cartItems, setCartItems] = useState<CartItem[]>([]);
 
-    function addCoffeeToCart(coffee: CartItem){
-        const coffeAlreadyExistsInCart = cartItems.findIndex(cartItems => cartItems.id === coffee.id);
-    }
+    // function addCoffeeToCart(coffee: CartItem){
+    //     const coffeAlreadyExistsInCart = cartItems.findIndex(cartItems => cartItems.id === coffee.id);
+    // }
  
     return(
         <CartContext.Provider value={{cartItems}}>
