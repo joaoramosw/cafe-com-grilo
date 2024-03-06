@@ -3,6 +3,7 @@ import { RegularText, TitleText } from './../../../../components/Typography';
 import { QuantifyInput } from "../../../../components/QuantifyInput";
 import {ShoppingCart} from "phosphor-react"
 import { formatMoney } from "../../../../utils/formatMoney";
+import { useCart } from "../../../../hooks/useCart";
 
 export interface Coffee{
     id:number;
@@ -19,6 +20,16 @@ interface CoffeeProps{
 
 
 export function CoffeeCard({coffee}:CoffeeProps){
+    
+    const {addCoffeeToCart} = useCart();
+
+    function handleAddToCard(){
+        const coffeeToAdd = {
+            ...coffee,
+            quantity:1
+        }
+        addCoffeeToCart(coffeeToAdd);
+    }
     const formattedPrice = formatMoney(coffee.price);
 
     return(
@@ -49,7 +60,7 @@ export function CoffeeCard({coffee}:CoffeeProps){
             
                 <AddCartWrapper>
                     <QuantifyInput/>
-                        <button>
+                        <button onClick={handleAddToCard}>
                             <ShoppingCart size={22} weight="fill"/>
                         </button>
                 </AddCartWrapper>
