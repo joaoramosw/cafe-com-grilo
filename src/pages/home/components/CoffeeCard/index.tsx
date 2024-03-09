@@ -1,9 +1,9 @@
-import { AddCartWrapper, CardFooter, CoffeeCardContainer, Description, Name, Tags } from "./styles";
-import { RegularText, TitleText } from './../../../../components/Typography';
+import { ShoppingCart } from "phosphor-react";
 import { QuantifyInput } from "../../../../components/QuantifyInput";
-import {ShoppingCart} from "phosphor-react"
-import { formatMoney } from "../../../../utils/formatMoney";
 import { useCart } from "../../../../hooks/useCart";
+import { formatMoney } from "../../../../utils/formatMoney";
+import { RegularText, TitleText } from './../../../../components/Typography';
+import { AddCartWrapper, CardFooter, CoffeeCardContainer, Description, Name, Tags } from "./styles";
 
 export interface Coffee{
     id:number;
@@ -20,7 +20,16 @@ interface CoffeeProps{
 
 
 export function CoffeeCard({coffee}:CoffeeProps){
-    
+    const [quantity , setQuantity] = useState(1);
+
+    function handleIncrease(){
+        setQuantity ((state) => state + 1)
+    }
+
+    function handleDescrease(){
+        setQuantity ((state) => state - 1)
+    }
+        
     const {addCoffeeToCart} = useCart();
 
     function handleAddToCard(){
