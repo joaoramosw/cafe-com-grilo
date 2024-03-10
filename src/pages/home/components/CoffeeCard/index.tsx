@@ -4,6 +4,7 @@ import { useCart } from "../../../../hooks/useCart";
 import { formatMoney } from "../../../../utils/formatMoney";
 import { RegularText, TitleText } from './../../../../components/Typography';
 import { AddCartWrapper, CardFooter, CoffeeCardContainer, Description, Name, Tags } from "./styles";
+import { useState } from "react";
 
 export interface Coffee{
     id:number;
