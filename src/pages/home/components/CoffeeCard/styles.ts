@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { RegularText, TitleText } from '../../../../components/Typography';
+import styled from "styled-components";
+import { RegularText, TitleText } from "../../../../components/Typography";
 
 export const CoffeeCardContainer = styled.div`
   width: 100%;
@@ -55,44 +55,41 @@ export const Description = styled(RegularText).attrs({
   margin-bottom: 2rem;
 `;
 
-export const CardFooter = styled.footer`
+export const CardFooter = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  >div{
+  > div {
     display: flex;
     align-items: center;
     gap: 3px;
 
-    p{
+    p {
       line-height: 0.75rem;
     }
-
   }
 `;
-
 
 export const AddCartWrapper = styled.div`
   width: 7.5rem;
 
-  >button{
+  > button {
     width: 2.375rem;
     height: 2.375rem;
     border: none;
     display: flex;
-    align-items: center;  
-    justify-content: center;  
-    background: ${({theme})=>theme.colors["brand-purple-dark"] };
-    color: ${({theme})=>theme.colors["base-card"] };
+    align-items: center;
+    justify-content: center;
+    background: ${({ theme }) => theme.colors["brand-purple-dark"]};
+    color: ${({ theme }) => theme.colors["base-card"]};
     border-radius: 6px;
-    margin-left: .3rem;
-    transition: .4s;
+    margin-left: 0.3rem;
+    transition: 0.4s;
 
-    &:hover{
-      background: ${({theme})=>theme.colors["brand-purple"] }; 
+    &:hover {
+      background: ${({ theme }) => theme.colors["brand-purple"]};
     }
   }
-
 `;
