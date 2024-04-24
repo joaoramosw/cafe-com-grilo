@@ -43,8 +43,10 @@ export function CoffeeCard({ coffee }: CoffeeProps) {
     const coffeeToAdd = {
       ...coffee,
       quantity,
+
     };
     addCoffeeToCart(coffeeToAdd);
+
   }
 
   const formattedPrice = formatMoney(coffee.price);
@@ -53,9 +55,11 @@ export function CoffeeCard({ coffee }: CoffeeProps) {
     <CoffeeCardContainer>
       <img src={`/coffees/${coffee.photo}`} />
       <Tags>
+
         {coffee.tags.map((tag) => (
           <span key={`${coffee.id}${tag}`}>{tag}</span>
         ))}
+        
       </Tags>
 
       <Name>{coffee.name}</Name>
