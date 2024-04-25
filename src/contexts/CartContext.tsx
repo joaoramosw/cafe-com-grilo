@@ -34,7 +34,7 @@ export function CartContextProvider({children}:CartContextProviderProps){
      }
     });
 
-    setCartItems(newCart); 
+    setCartItens(newCart); 
 
     }
  
