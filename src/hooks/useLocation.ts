@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 import { useGeolocated } from "react-geolocated";
 
+
 import BrazilStates from "../data/brazil-states.json";
 
 interface APIResponse {
