@@ -57,6 +57,7 @@ export function CoffeeCard({ coffee }: CoffeeProps) {
       <Tags>
 
         {coffee.tags.map((tag) => (
+          
           <span key={`${coffee.id}${tag}`}>{tag}</span>
         ))}
         
