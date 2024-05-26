@@ -7,6 +7,7 @@ import BrazilStates from "../data/brazil-states.json";
 
 interface APIResponse {
   city: string;
+  state: string;
   principalSubdivision: string;
 }
 
