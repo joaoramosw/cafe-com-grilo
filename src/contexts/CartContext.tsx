@@ -8,7 +8,6 @@ export interface CartItem extends Coffee {
 interface CartContextType{
     cartItems: CartItem[];
     addCoffeeToCart: (coffee: CartItem) => void;
-    coffeImage ? CartItem[];
 }
 
 interface CartContextProviderProps{

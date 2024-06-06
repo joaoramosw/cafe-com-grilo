@@ -1,17 +1,17 @@
-import { QuantityInput } from "../../../../components/QuantityInput";
-import { RegularText, TitleText } from "../../../../components/Typography";
-import {
-  CoffeeCardContainer,
-  Tags,
-  Name,
-  Description,
-  CardFooter,
-  AddCartWrapper,
-} from "./styles";
 import { ShoppingCart } from "phosphor-react";
 import { useState } from "react";
+import { QuantityInput } from "../../../../components/QuantifyInput";
+import { RegularText, TitleText } from "../../../../components/Typography";
 import { useCart } from "../../../../hooks/useCart";
 import { formatMoney } from "../../../../utils/formatMoney";
+import {
+  AddCartWrapper,
+  CardFooter,
+  CoffeeCardContainer,
+  Description,
+  Name,
+  Tags,
+} from "./styles";
 
 export interface Coffee {
   id: number;
