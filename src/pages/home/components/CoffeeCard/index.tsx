@@ -90,6 +90,10 @@ export function CoffeeCard({ coffee }: CoffeeProps) {
             {formattedPrice}
           </TitleText>
         </div>
+        
+        useEffect(() =>{
+          const interceptorId = addCoffeeToCart(coffeeToAdd);
+        } 
 
         <AddCartWrapper>
           <QuantityInput
