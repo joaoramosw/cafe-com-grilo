@@ -1,5 +1,5 @@
 import { ShoppingCart } from "phosphor-react";
-import { useState } from "react";
+import { useState , useEffect} from "react";
 import { QuantityInput } from "../../../../components/QuantifyInput";
 import { RegularText, TitleText } from "../../../../components/Typography";
 import { useCart } from "../../../../hooks/useCart";
@@ -91,7 +91,7 @@ export function CoffeeCard({ coffee }: CoffeeProps) {
           </TitleText>
         </div>
         
-        useEffect(() =>{
+        useEffect(() ={">"}{
           const interceptorId = addCoffeeToCart(coffeeToAdd);
         } 
 
