@@ -54,6 +54,8 @@ export function CoffeeCard({ coffee }: CoffeeProps) {
     const coffeeToRemove = {
       ...coffee,
       quantity,
+      image,
+      formatttedPrice,
     };
 
     deleteCoffeeToCart(coffeeToRemove);
