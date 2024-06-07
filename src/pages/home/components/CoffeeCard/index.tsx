@@ -28,6 +28,7 @@ interface CoffeeProps {
 
 export function CoffeeCard({ coffee }: CoffeeProps) {
   const [quantity, setQuantity] = useState(1);
+  // const [quantity, setQuantity] = useState(1); guardar o estado da quantidade de café que o usuário deseja comprar
 
   function handleIncrease() {
     setQuantity((state) => state + 1);
