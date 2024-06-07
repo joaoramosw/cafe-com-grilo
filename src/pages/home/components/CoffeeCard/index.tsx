@@ -55,7 +55,7 @@ export function CoffeeCard({ coffee }: CoffeeProps) {
       ...coffee,
       quantity,
       image,
-      formatttedPrice,
+      formattedPrice,
     };
 
     deleteCoffeeToCart(coffeeToRemove);
