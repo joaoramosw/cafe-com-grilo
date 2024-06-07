@@ -50,6 +50,15 @@ export function CoffeeCard({ coffee }: CoffeeProps) {
 
   }
 
+  function handleRemoveToCart() {
+    const coffeeToRemove = {
+      ...coffee,
+      quantity,
+    };
+
+    deleteCoffeeToCart(coffeeToRemove);
+  }
+
   const formattedPrice = formatMoney(coffee.price);
 
   return (
