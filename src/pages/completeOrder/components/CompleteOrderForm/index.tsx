@@ -12,7 +12,7 @@ export function CompleteOrderForm(){
     return(
         <CompleteOrderFormContainer>
             <TitleText size="xs" color="subtitle" >
-                Complete seu pedido
+                Complete seu pedido com as informações abaixo
             </TitleText>
             <FormSectionContainer>
                 <SectionTitle
