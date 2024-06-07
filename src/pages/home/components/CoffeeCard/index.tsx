@@ -59,7 +59,6 @@ export function CoffeeCard({ coffee }: CoffeeProps) {
         {coffee.tags.map((tag) => (
           
           <span key={`${coffee.id}${tag}`}>{tag}</span>
-          <p key={`${coffee.image}${photo}`}>{photo}</p>
         ))}
         
       </Tags>
